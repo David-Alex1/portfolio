@@ -5,7 +5,12 @@ const projectHighlights = [
     title: "Case Packing and Palletizing Cell (ABB RobotStudio)",
     description:
       "Built a production-style simulation using ABB IRB 1600 and IRB 360 robots, with dynamic conveyor interaction and RAPID programming for synchronized pick-and-place throughput.",
-    focus: ["RobotStudio", "RAPID", "Workcell Simulation", "Industrial Robotics"],
+    focus: [
+      "RobotStudio",
+      "RAPID",
+      "Workcell Simulation",
+      "Industrial Robotics",
+    ],
     demoUrl: "https://www.youtube.com/watch?v=dqE8qXcoY_k&ab_channel=DavidAlex",
   },
   {
@@ -56,7 +61,14 @@ const skillGroups = [
   },
   {
     title: "Programming + Controls",
-    items: ["Python", "MATLAB", "RAPID", "PID Control", "State Machine Architecture"],
+    items: [
+      "Python",
+      "MATLAB",
+      "RAPID",
+      "PID Control",
+      "State Machine Architecture",
+      "C++",
+    ],
   },
   {
     title: "Systems + Team Execution",
@@ -126,13 +138,16 @@ export default function Home() {
         <div className="relative grid items-center gap-10 md:grid-cols-[1.2fr_0.8fr]">
           <div>
             <span className="section-label mb-4">Robotics Portfolio</span>
-            <h1 className="mb-3 text-4xl leading-tight sm:text-5xl lg:text-6xl">Hi, I&apos;m David Alex.</h1>
+            <h1 className="mb-3 text-4xl leading-tight sm:text-5xl lg:text-6xl">
+              Hi, I&apos;m David Alex.
+            </h1>
             <p className="mb-4 text-lg font-semibold text-[var(--color-accent-strong)] sm:text-xl">
               Robotics Engineer | Automation | Simulation
             </p>
             <p className="max-w-2xl text-base leading-relaxed text-[var(--color-muted)] sm:text-lg">
-              I build reliable robotic systems from simulation to deployment, with a focus on controls,
-              perception, and scalable automation workflows.
+              I build reliable robotic systems from simulation to deployment,
+              with a focus on controls, perception, and scalable automation
+              workflows.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
               <a
@@ -166,29 +181,40 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="about" className="section-shell reveal reveal-delay-2 mb-10 px-6 py-9 md:px-8">
+      <section
+        id="about"
+        className="section-shell reveal reveal-delay-2 mb-10 px-6 py-9 md:px-8"
+      >
         <span className="section-label mb-4">About</span>
         <h2 className="mb-4 text-2xl md:text-3xl">Engineering profile</h2>
         <div className="space-y-4 text-[15px] leading-relaxed text-[var(--color-muted)] md:text-base">
           <p>
-            My project work is centered on robotics system integration, where software, controls, and
-            mechanical constraints all have to work together under realistic operating conditions. I prioritize
-            reliable behavior, clear architecture, and measurable performance over one-off demos.
+            My project work is centered on robotics system integration, where
+            software, controls, and mechanical constraints all have to work
+            together under realistic operating conditions. I prioritize reliable
+            behavior, clear architecture, and measurable performance over
+            one-off demos.
           </p>
           <p>
-            In research and coursework, I have implemented robotic manipulation pipelines, simulated full
-            automation cells, and built autonomous workflows that combine sensing, kinematics, and control
-            logic. I enjoy solving edge cases and translating complex technical systems into dependable results.
+            In research and coursework, I have implemented robotic manipulation
+            pipelines, simulated full automation cells, and built autonomous
+            workflows that combine sensing, kinematics, and control logic. I
+            enjoy solving edge cases and translating complex technical systems
+            into dependable results.
           </p>
           <p>
-            Outside engineering, I served as captain of the WPI Valorant Esports Team, where I led team
-            preparation and high-pressure decision making. That leadership experience directly strengthened my
+            Outside engineering, I served as captain of the WPI Valorant Esports
+            Team, where I led team preparation and high-pressure decision
+            making. That leadership experience directly strengthened my
             collaboration and communication when shipping technical projects.
           </p>
         </div>
       </section>
 
-      <section id="skills" className="section-shell reveal reveal-delay-2 mb-10 px-6 py-9 md:px-8">
+      <section
+        id="skills"
+        className="section-shell reveal reveal-delay-2 mb-10 px-6 py-9 md:px-8"
+      >
         <span className="section-label mb-4">Skills</span>
         <h2 className="mb-6 text-2xl md:text-3xl">Core capability stack</h2>
         <div className="grid gap-6 md:grid-cols-3">
@@ -210,11 +236,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="projects" className="section-shell reveal reveal-delay-3 mb-10 px-6 py-9 md:px-8">
+      <section
+        id="projects"
+        className="section-shell reveal reveal-delay-3 mb-10 px-6 py-9 md:px-8"
+      >
         <span className="section-label mb-4">Projects</span>
         <h2 className="mb-3 text-2xl md:text-3xl">Selected robotics work</h2>
         <p className="mb-8 max-w-3xl text-sm leading-relaxed text-[var(--color-muted)] md:text-base">
-          Each project includes a playable demo and the key engineering focus areas behind the work.
+          Each project includes a playable demo and the key engineering focus
+          areas behind the work.
         </p>
         <div className="ml-2 border-l border-[var(--color-border)] pl-6">
           {projectHighlights.map((project, index) => (
@@ -228,7 +258,9 @@ export default function Home() {
                 className="absolute -left-[33px] top-7 h-3.5 w-3.5 rounded-full border-2 border-[var(--color-accent)] bg-[var(--color-surface)]"
                 aria-hidden="true"
               />
-              <h3 className="mb-4 text-lg leading-snug md:text-xl">{project.title}</h3>
+              <h3 className="mb-4 text-lg leading-snug md:text-xl">
+                {project.title}
+              </h3>
               <div className="mb-4 aspect-video overflow-hidden rounded-xl border border-[var(--color-border)] bg-[#121212]">
                 <iframe
                   className="h-full w-full"
@@ -266,12 +298,16 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="contact" className="section-shell reveal reveal-delay-3 px-6 py-9 md:px-8">
+      <section
+        id="contact"
+        className="section-shell reveal reveal-delay-3 px-6 py-9 md:px-8"
+      >
         <span className="section-label mb-4">Contact</span>
         <h2 className="mb-3 text-2xl md:text-3xl">Let&apos;s connect</h2>
         <p className="max-w-3xl text-sm leading-relaxed text-[var(--color-muted)] md:text-base">
-          I am actively looking for opportunities to contribute to robotics and automation teams where I can
-          build reliable systems, iterate quickly, and collaborate on challenging engineering problems.
+          I am actively looking for opportunities to contribute to robotics and
+          automation teams where I can build reliable systems, iterate quickly,
+          and collaborate on challenging engineering problems.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
           <a
